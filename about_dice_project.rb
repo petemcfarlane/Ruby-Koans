@@ -10,7 +10,7 @@ class DiceSet
   def roll(amount)
     @values = []
     amount.downto(1) do
-      @values.push(rand(6))
+      @values.push(rand(6) + 1)
     end
   end
 end
